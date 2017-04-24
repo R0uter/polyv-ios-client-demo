@@ -85,6 +85,7 @@
 		E5F05B031E5ED85800A832CF /* AlicloudUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F05AEA1E5ED85800A832CF /* AlicloudUtils.framework */; };
 		E5F05B041E5ED85800A832CF /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F05AEB1E5ED85800A832CF /* UTDID.framework */; };
 		E5F05B051E5ED85800A832CF /* libpolyvSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F05B001E5ED85800A832CF /* libpolyvSDK.a */; };
+		E98FDE581EAE1D800021E0F4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98FDE571EAE1D800021E0F4 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +236,7 @@
 		E5F05AFF1E5ED85800A832CF /* PvVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PvVideo.h; sourceTree = "<group>"; };
 		E5F05B001E5ED85800A832CF /* libpolyvSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpolyvSDK.a; sourceTree = "<group>"; };
 		E5F05B011E5ED85800A832CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E98FDE571EAE1D800021E0F4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -486,6 +488,7 @@
 			children = (
 				E5D4D8B11E48097F004308F0 /* AppDelegate.h */,
 				E5D4D8B21E48097F004308F0 /* AppDelegate.m */,
+				E98FDE571EAE1D800021E0F4 /* Launch Screen.storyboard */,
 				E5D4D8B31E48097F004308F0 /* Main.storyboard */,
 				E5D4D8B51E48097F004308F0 /* RootViewViewController.h */,
 				E5D4D8B61E48097F004308F0 /* RootViewViewController.m */,
@@ -667,6 +670,7 @@
 				E5D211251CD8B72800F848CA /* checkbox_unchecked@2x.png in Resources */,
 				CBA37126196E6549008E95ED /* InfoPlist.strings in Resources */,
 				E5D211311CD8B72800F848CA /* pl-video-player-pause@2x.png in Resources */,
+				E98FDE581EAE1D800021E0F4 /* Launch Screen.storyboard in Resources */,
 				E5D211341CD8B72800F848CA /* pl-video-player-play@3x.png in Resources */,
 				CB6569211C561B8B00AC2EC8 /* pvlogo.png in Resources */,
 				E5D2112B1CD8B72800F848CA /* pl-video-player-close@3x.png in Resources */,
