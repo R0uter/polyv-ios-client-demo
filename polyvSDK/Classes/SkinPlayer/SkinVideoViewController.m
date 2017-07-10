@@ -1137,7 +1137,12 @@ typedef NS_ENUM(NSInteger, panHandler){
 		}];
 	}else{ // 视图模式
 //		NSLog(@"视图模式");
-		CGRect frame = [UIScreen mainScreen].bounds;
+        CGRect frame = CGRectZero;
+        //frame = [UIScreen mainScreen].bounds;
+        //if (!CGRectEqualToRect(frame, [self fullscreenFrame])) {
+        //    NSLog(@"scrren = %@, frame = %@", NSStringFromCGRect(frame), NSStringFromCGRect([self fullscreenFrame]));
+        //}
+        frame = [self fullscreenFrame];
 		self.frame = self.view.frame = frame;
 		[self.videoControl changeToFullsreen];
 		if (self.keepNavigationBar) {
@@ -1162,6 +1167,18 @@ typedef NS_ENUM(NSInteger, panHandler){
 	if (self.fullscreenBlock) {
 		self.fullscreenBlock();
 	}
+}
+
+- (CGRect)fullscreenFrame {
+    CGRect fullscreenFrame = [UIScreen mainScreen].bounds;
+    CGSize fullscreenSize = fullscreenFrame.size;
+    if (fullscreenSize.width < fullscreenSize.height) {
+        CGFloat tmp = fullscreenSize.width;
+        fullscreenSize.width = fullscreenSize.height;
+        fullscreenSize.height = tmp;
+    }
+    fullscreenFrame.size = fullscreenSize;
+    return fullscreenFrame;
 }
 
 /// 非全屏样式
